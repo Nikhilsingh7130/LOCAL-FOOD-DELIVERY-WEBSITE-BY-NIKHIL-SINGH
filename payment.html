@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        .price
+        {
+            padding: 0%;
+            font-weight: bolder;
+            color: blueviolet;
+            font-size: 70px;
+        }
+        p{
+            font-size: 30px;
+        }
+        .amt
+        {
+            text-align: center;
+        }
+        .pay-with
+        {
+            font-size: 50px;
+        }
+        .pay-type, .bank, .acc-type
+        {
+            font-size: 30px;
+        }
+        .content
+        {
+            padding-top: 0;
+            padding: 30px;
+            width: 30%;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        #proToPay
+        {
+            text-align: center;
+        }
+        .main
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <div class="amt">
+                <h1 class="price">$310.00</h1>
+                <p>
+                    <strong>Goods and Services</strong>
+                    <br>
+                    Ref: 554732226387
+                </p>
+                <hr>
+                <h1 class="pay-with">Pay with</h1>
+            </div>
+            <div class="pay-type">
+                <h3>How would you like to pay?</h3>
+                <input type="radio" name="pay" id="Credit">
+                <label for="credit">Credit or Debit card.</label>
+                <br>
+                <input type="radio" name="pay" id="Bank">
+                <label for="Bank">Pay by Bank</label>
+            </div>
+            <div class="bank">
+                <h2>Bank</h2>
+                <select id="bank" name="payment-type" style="font-size: 30px;" required>
+                    <option>Select</option>
+                    <option value="BOB">Bank of baroda</option>
+                    <option value="HDFC">HDFC</option>
+                    <option value="UBOI">Union Bank Of India</option>
+                    <option value="Canara">Canara Bank</option>
+                    <option value="PNB">Punjab National Bank</option>
+                </select>
+            </div>
+            <div class="acc-type">
+                <h2>Account type</h2>
+                <div style="border: 1px solid black; width: 250px; border-radius: 5px;">
+                    <input type="radio" name="acc" id="personal">
+                    <label for="credit">Personal</label>
+                </div>
+                <br>
+                <div style="border: 1px solid black; width: 250px; border-radius: 5px;">
+                    <input type="radio" name="acc" id="business">
+                    <label for="business">Business</label>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div id="proToPay">
+                <a href="card.html"><button style="background-color: rgb(67, 225, 46); color: rgb(247, 247, 247); width: 400px; border: 0px ; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 30px; font-weight: bolder;  border-radius: 10px;">
+                   Select
+               </button></a>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

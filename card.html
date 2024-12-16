@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay with Card</title>
+    <style>
+        .price
+        {
+            padding: 0%;
+            font-weight: bolder;
+            color: blueviolet;
+            font-size: 70px;
+        }
+        p{
+            font-size: 30px;
+        }
+        .amt
+        {
+            text-align: center;
+        }
+        .pay-with
+        {
+            font-size: 50px;
+        }
+        .pay-type
+        {
+            font-size: 30px;
+        }
+        .content
+        {
+            padding-top: 0;
+            padding: 30px;
+            width: 30%;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        #proToPay
+        {
+            text-align: center;
+        }
+        .main
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <div class="amt">
+                <h1 class="price">$310.00</h1>
+                <p>
+                    <strong>Goods and Services</strong>
+                    <br>
+                    Ref: 554732226387
+                </p>
+                <hr>
+                <h1 class="pay-with">Pay with card</h1>
+            </div>
+            <div class="pay-type">
+                <h2>Email</h2>
+                <input type="email" name="email" id="email" style="font-size: 30px; width: 316px;">
+                <br>
+                <br>
+                <h2>Card information</h2>
+                <div>
+                    <input style="font-size: 30px; width: 316px;" type="tel" name="phone" id="phone" placeholder="Number">
+                    <br>
+                    <input style="font-size: 30px; width: 150px" type="tel" name="phone" id="phone" placeholder="MM/YY">
+                    <input style="font-size: 30px; width: 150px;" type="tel" name="phone" id="phone" placeholder="CVC">
+                </div>
+                <br>
+                <h2>Country or region</h2>
+                <div>
+                    <select id="bank" style="font-size: 30px; width: 324px;" name="payment-type" required>
+                        <option>Select</option>
+                        <option value="IND">India</option>
+                        <option value="UK">The United Kingdom</option>
+                        <option value="Aus">Australia</option>
+                        <option value="SA">Sounth Africa</option>
+                    </select>
+                    <br>
+                    <input type="tel" style="font-size: 30px; width: 316px;" name="phone" id="phone" placeholder="ZIP">
+                </div>
+                <div id="proToPay">
+                    <a href="Success.html"><button style="background-color: rgb(225, 82, 46); color: rgb(247, 247, 247); width: 400px; border: 0px ; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 30px; margin: 30px; padding: 10px; font-weight: bolder; border-radius: 10px;">
+                       Pay
+                   </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
